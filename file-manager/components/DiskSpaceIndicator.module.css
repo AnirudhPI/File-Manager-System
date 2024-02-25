@@ -1,0 +1,56 @@
+.diskSpaceIndicator {
+    background-color: #333; 
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 16px; 
+    color: white;
+  }
+  
+  .usageGauge {
+    background-color: #222; 
+    border-radius: 4px;
+    overflow: hidden; 
+    position: relative; 
+    height: 20px; 
+  }
+  
+  .usageGaugeFill {
+    background-color: #0f0; 
+    width: 50%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  .usageInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  
+  .percentage {
+    font-weight: bold;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+  }
+  
+  .diskCleanerButton {
+    background-color: #555;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 12px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+  }
+  
+  .diskCleanerButton:hover {
+    background-color: #666; 
+  }
+  

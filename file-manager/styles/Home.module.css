@@ -7,6 +7,24 @@
   align-items: center;
 }
 
+.layout {
+  display: flex; /* Establishes a flex container */
+  flex-direction: row; /* Aligns children in a row */
+  height: 100vh; /* Full height of the viewport */
+  width: 100%;
+}
+
+.content {
+  background-color: #413d3d;
+  flex: 1;
+
+}
+
+.sidebar {
+  background-color: #11161c;
+  flex: 0 0 30%;
+}
+
 .title a {
   color: #0070f3;
   text-decoration: none;

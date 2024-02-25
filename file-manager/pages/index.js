@@ -1,18 +1,28 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import NavBar from '../components/NavBar';
+import Sidebar from '../components/SideBar';
+import MainContent from '../components/MainContent';
+import {Divider} from "@nextui-org/react";
 
 export default function Home() {
   return (
     
     <div className={styles.container}>
       <NavBar />
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
+      <div className={styles.layout}>
+        <div className={styles.sidebar}>
+          <Sidebar />
+        </div>
+        <div className={styles.content}>
+          <MainContent />
+        </div>
+      </div>
+      
       <main>
+        
+
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>

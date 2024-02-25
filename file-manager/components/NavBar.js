@@ -9,8 +9,8 @@ const NavBar = () => {
         <div className={styles.navRow}>
             <div className={styles.nameHolder}>
             <Image src={IDM} alt="Internet Download Manager Logo"
-                width={25} // Set the width as needed
-                height={25} // Set the height as needed
+                width={25} 
+                height={25}
                 objectFit="contain" 
                 />
                 <div className={styles.title}>
