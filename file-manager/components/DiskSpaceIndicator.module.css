@@ -1,56 +1,62 @@
 .diskSpaceIndicator {
-    background-color: #333; 
-    border-radius: 8px;
-    padding: 16px;
-    margin-top: 16px; 
-    color: white;
-  }
-  
-  .usageGauge {
-    background-color: #222; 
-    border-radius: 4px;
-    overflow: hidden; 
-    position: relative; 
-    height: 20px; 
-  }
-  
-  .usageGaugeFill {
-    background-color: #0f0; 
-    width: 50%; 
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 4px;
-    transition: width 0.3s ease-in-out; 
-  }
-  
-  .usageInfo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-  }
-  
-  .percentage {
-    font-weight: bold;
-  }
-  
-  .label {
-    font-size: 0.875rem;
-  }
-  
-  .diskCleanerButton {
-    background-color: #555;
-    border: none;
-    padding: 8px 16px;
-    margin-top: 12px;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%; 
-  }
-  
-  .diskCleanerButton:hover {
-    background-color: #666; 
-  }
-  
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  background-color: rgb(15, 10, 42);
+}
+
+.diskSpaceIndicator .label {
+  color: #c1bebe;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.usageGauge {
+  width: 200px;
+  height: 100px; 
+  position: relative;
+  margin: 20px auto; 
+}
+
+.usageInfo .percentage {
+  font-size: 2rem;
+  color: white;
+  /* align-items: center; */
+  padding-left: 70px;
+  margin-bottom: 5px;
+}
+
+.usageInfo {
+  padding-top: 25px;
+}
+
+.usageInfo .label {
+  color: #aaa;
+  font-size: 0.9rem;
+  padding-left: 55px;
+  width: 100%;
+}
+
+.diskCleanerButton {
+  background: linear-gradient(90deg, rgb(46, 155, 174) 0%, rgb(117, 13, 207) 50%, rgb(200, 62, 235) 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.emojiContainer {
+  font-size: 4rem; /* Adjust the size of the emoji as needed */
+  width: 50px; /* Set a specific width if necessary */
+  height: 50px; /* Set a specific height if necessary */
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* If you want it rounded like an image */
+  overflow: hidden; /* Ensures nothing spills outside the border-radius */
+  background: #000; /* Or any background styling you want */
+}

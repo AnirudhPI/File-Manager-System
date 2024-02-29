@@ -1,9 +1,7 @@
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import NavBar from '../components/NavBar';
 import Sidebar from '../components/SideBar';
 import MainContent from '../components/MainContent';
-import {Divider} from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -14,6 +12,7 @@ export default function Home() {
       <div className={styles.layout}>
         <div className={styles.sidebar}>
           <Sidebar />
+          {/* <SideNav /> */}
         </div>
         <div className={styles.content}>
           <MainContent />
