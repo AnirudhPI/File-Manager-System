@@ -1,7 +1,8 @@
 import React from 'react';
-import styles from './MainContent.module.css'; // Make sure to create this CSS module
+import styles from './MainContent.module.css';
+import Table from './Table';
 
-const MainContent = ({ children }) => {
+const MainContent = () => {
   return (
     <div className={styles.mainContent}>
       <div className={styles.header}>
@@ -10,6 +11,7 @@ const MainContent = ({ children }) => {
         <button className={styles.button}>Stop</button>
         <button className={styles.button}>Stop All</button>
       </div>
+      <Table />
     </div>
   );
 };
